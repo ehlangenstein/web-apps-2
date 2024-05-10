@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   # get("/companies/")
   # resources "contacts"
   get("/contacts", :controller => "contacts", :action => "index")
-  # resources "posts"
-  get("/posts", :controller => "posts", :action => "index")
+
+  resources "posts"
+  # get("/posts", :controller => "posts", :action => "index")
 end
